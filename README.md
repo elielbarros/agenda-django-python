@@ -47,3 +47,10 @@ Django Super User
 - Em project > settings.py é possível visualizar as validações para a criação de senha do super user. Procure por AUTH_PASSWORD_VALIDATORS.
 - Para realizar a troca de senha, execute: ```python manage.py changepassword <NOME_DE_USUARIO>```
 - Exemplo: ```python manage.py changepassword john```
+
+Django Database Connection
+- O django usa, por padrao, o sqlite como banco de dados.
+- Ao executar as 'Migrations', o framework cria e atualiza todas as tabelas que a aplicação tem mapeado.
+- É interessante ler as documentações a seguir:
+  - https://docs.djangoproject.com/pt-br/4.2/topics/db/models/
+  - https://docs.djangoproject.com/pt-br/4.2/ref/models/fields/#field-choices
