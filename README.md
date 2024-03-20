@@ -54,3 +54,24 @@ Django Database Connection
 - É interessante ler as documentações a seguir:
   - https://docs.djangoproject.com/pt-br/4.2/topics/db/models/
   - https://docs.djangoproject.com/pt-br/4.2/ref/models/fields/#field-choices
+
+Onde criar Models?
+- Para criar um Model, é necessário acessar o app desejado e o arquivo models.py
+- Usar o arquivo models.py para criar a classe que representa o modelo desejado, seguindo o padrao do Django
+
+Como fazer a migração dos Models para o banco de dados?
+- Executar a atualização de banco com 'Migrations'
+- Execute primeiramente o comando: ```python manage.py makemigrations```
+- É possível visualizar o resultado do comando dentro da pasta do app no diretorio 'migrations'
+- Execute em seguida o comando: ```python manage.py migrate```
+- É possível visualizar o resultado do comando acima, com o dbeaver. A tabela criada terá o nome do app + o nome da classe
+
+Como alterar time zone da aplicação?
+- Acesse o arquivo settings.py e atualize a constante TIME_ZONE para o tipo que desejar
+- Valor padrao é TIME_ZONE = 'UTC'
+- Exemplo: TIME_ZONE = 'America/Sao_Paulo'
+
+Como alterar o idioma do Django?
+- Acesse o arquivo settings.py e atualize a constante LANGUAGE_CODE para a linguagem desejada
+- Valor padrao é LANGUAGE_CODE = 'en-us'
+- Exemplo: LANGUAGE_CODE = 'pt-br'
