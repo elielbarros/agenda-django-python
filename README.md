@@ -77,3 +77,9 @@ Como alterar o idioma do Django?
 - Valor padrao é LANGUAGE_CODE = 'en-us'
 - Exemplo: LANGUAGE_CODE = 'pt-br'
 
+Como usar django shell para executar CRUD de um modelo?
+- Executar o comando: ```python manage.py shell```
+- Insert ![insert_contact_django_shell.png](.estudo_static%2Finsert_contact_django_shell.png)
+- Insert sem save ![create_contact_django_shell.png](.estudo_static%2Fcreate_contact_django_shell.png)
+- Select com condição ![select_all_with_condition_contact_django_shell.png](.estudo_static%2Fselect_all_with_condition_contact_django_shell.png)
+- Select com ordenação '-id' (menos) descrescente ![select_order_by_contact_django_shell.png](.estudo_static%2Fselect_order_by_contact_django_shell.png)
