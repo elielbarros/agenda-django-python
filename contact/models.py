@@ -17,6 +17,9 @@ class Contact(models.Model):
     # essa informação.
     created_date = models.DateTimeField(default=timezone.now)
     description = models.TextField(blank=True)
+    show = models.BooleanField(default=True)
+    # VAI CRIAR AS SUBPASTAS media/pictures/ano/mes/arquivo.extensao
+    picture = models.ImageField(blank=True, upload_to='pictures/%Y/%m/')
     
     def __str__(self) -> str:
         # Se nao estiver configurado no admin o list_display, aparecerá como

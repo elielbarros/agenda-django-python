@@ -83,3 +83,25 @@ Como usar django shell para executar CRUD de um modelo?
 - Insert sem save ![create_contact_django_shell.png](.estudo_static%2Fcreate_contact_django_shell.png)
 - Select com condição ![select_all_with_condition_contact_django_shell.png](.estudo_static%2Fselect_all_with_condition_contact_django_shell.png)
 - Select com ordenação '-id' (menos) descrescente ![select_order_by_contact_django_shell.png](.estudo_static%2Fselect_order_by_contact_django_shell.png)
+- Delete c.delete(), na imagem de insert é possível ver na ultima linha o delete.
+- Todas as consultas sao lazy, com exceção de create e delete
+
+Como salvar imagem/arquivo na base de dados?
+- É mais performatico salvar no banco de dados um link para uma imagem do que salvar a imagem, de fato.
+- O campo ImageFiled é responsavel por receber as imagens enviadas pelo usuario
+- Para utilizar esse tipo, é necessario ter o Pillow
+- Para instalar o Pillow execute o comando: ```python -m pip install Pillow```
+
+Para que serve o STATIC_ROOT?
+- É uma pasta que tem ser referenciada pelo servidor que vai servir arquivos estaticos.
+- Essa pasta é onde se faz o collectstatic
+- Todos os arquivos estaticos serão movidos para esse arquivo
+- O servidor ngix buscará os arquivos estaticos dentro dessa pasta
+- Essa pasta tem que estar no .gitignore
+- Não edite a pasta gerada nesse path
+
+Para que serve a configuração MEDIA_URL?
+- Concentra os arquivos enviados pelo usuario.
+
+Para que serve a configuração MEDIA_ROOT?
+- Faz a mesma tarefa do STATIC_ROOT mas para os arquivos enviados pelo usuario.
