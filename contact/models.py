@@ -19,5 +19,7 @@ class Contact(models.Model):
     description = models.TextField(blank=True)
     
     def __str__(self) -> str:
+        # Se nao estiver configurado no admin o list_display, aparecerá como
+        # está aqui
         return f'{self.first_name} {self.last_name}'
     
