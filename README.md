@@ -47,6 +47,7 @@ Django Super User
 - Em project > settings.py é possível visualizar as validações para a criação de senha do super user. Procure por AUTH_PASSWORD_VALIDATORS.
 - Para realizar a troca de senha, execute: ```python manage.py changepassword <NOME_DE_USUARIO>```
 - Exemplo: ```python manage.py changepassword john```
+- eliel, senha de sempre
 
 Django Database Connection
 - O django usa, por padrao, o sqlite como banco de dados.
@@ -75,3 +76,4 @@ Como alterar o idioma do Django?
 - Acesse o arquivo settings.py e atualize a constante LANGUAGE_CODE para a linguagem desejada
 - Valor padrao é LANGUAGE_CODE = 'en-us'
 - Exemplo: LANGUAGE_CODE = 'pt-br'
+
