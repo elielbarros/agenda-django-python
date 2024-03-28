@@ -22,4 +22,8 @@ class ContactAdmin(admin.ModelAdmin):
     # Se o link estiver na lista list_ediitable, ocorre um erro, nao pode
     # estar nos dois
     list_display_links = ('id', 'phone')
-    
+
+@admin.register(models.Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+    ordering = ('-id',)
