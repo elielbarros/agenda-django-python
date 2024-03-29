@@ -9,6 +9,15 @@ from django.utils import timezone
 # picture (imagem)
 
 class Category(models.Model):
+    # Classe Meta serve para configurar os meta dados da classe Category
+    class Meta:
+        # Parametro que define o nome no singular que vai aparecer na tela
+        # de cadastro
+        verbose_name = 'Category'
+        # Parametro que define o nome no plural que vai aparecer na tela de
+        # cadastro
+        verbose_name_plural = 'Categories'
+    
     name = models.CharField(max_length=50)
     
     def __str__(self) -> str:
