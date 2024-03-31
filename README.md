@@ -105,3 +105,7 @@ Para que serve a configuração MEDIA_URL?
 
 Para que serve a configuração MEDIA_ROOT?
 - Faz a mesma tarefa do STATIC_ROOT mas para os arquivos enviados pelo usuario.
+
+Para que serve a biblioteca FAKER?
+- A biblioteca Faker em Python é uma ferramenta útil para gerar dados falsos de forma rápida e conveniente.
+- Para instalar a biblioteca, execute o comando: ```python -m pip install faker```
